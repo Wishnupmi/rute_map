@@ -1,7 +1,6 @@
 # rute_map
 Menampilkan rute map dengan Leaflet
 
-![alt text](https://github.com/Wishnupmi/POS_System_VBDotNet2010/blob/main/POS%20System.png)
+![alt text](https://github.com/Wishnupmi/rute_map/blob/main/rute_map.png)
 
-# Channel Youtube Wishnu Programming : 
-https://youtu.be/aLg3thztYPk
+
