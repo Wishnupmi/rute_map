@@ -1,0 +1,49 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Menampilkan Peta dengan LeafletJS</title>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
+	<style type="text/css">
+		#peta{
+			height:100vh;
+		}
+	</style>
+</head>
+<body>
+	<div id="peta"></div>
+
+	<script type="text/javascript">
+		function main() {
+
+var options = {
+center: [0.5769167874644966, 123.01858018012717],
+zoom: 15
+}
+
+var map = L.map('map', options);
+
+L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png',
+{attribution: 'CARTO'})
+.addTo(map);
+
+var control = L.Routing.control({
+waypoints: [
+L.latLng(57.74, 11.94),
+L.latLng(57.6792, 11.949)
+],
+// routeWhileDragging: true
+}).addTo(map);
+control.hide();
+
+}
+window.onload = main;
+
+	</script>
+</body>
+</html>
